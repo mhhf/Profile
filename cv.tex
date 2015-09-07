@@ -1,0 +1,258 @@
+% Copyright 2012 - 2015 Srinivas Kowtal (srinivaskay@gmail.com)
+%
+% Original copyright information follows below
+%
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,letterpaper]{moderncv}
+
+%\usepackage{hyperref}
+\usepackage{color}
+\usepackage{fontspec}
+
+% moderncv themes
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[blue]{casual}                
+\moderncvtheme[blue]{classic}
+%\moderncvtheme[blue]{casual}                
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+
+\setlength{\hintscolumnwidth}{2.3cm} % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
+
+% CHARACTER ENCODING
+\usepackage{xunicode}
+\usepackage{xelatex}
+\usepackage[utf8]{inputenc}                 % replace by the encoding you are using
+\defaultfontfeatures{Mapping=tex-text}      % converts LaTeX specials (``quotes'' --- dashes
+                                            % etc.) to unicode
+% FONTS
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{DejaVuSansMono}
+%\setsansfont[Scale=0.9]{OptimaLTStd}
+
+% ---- CUSTOM AMPERSAND
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+% personal data
+\firstname{Denis}
+\familyname{Erfurt}
+%\title{Srini Kowtal's Resume}                     % optional, remove the line if not wanted
+\address{Weserstr. 135}{12059 Berlin} % optional, remove the line if not wanted
+\mobile{\texttt{+49 160 97308497}}              % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{denis.erfurt@gmail.com}                      % optional, remove the line if not wanted
+\homepage{github.com/mhhf}                % optional, remove the line if not wanted
+%\extrainfo{https://github.com/zhaphod} % optional, remove the line if not wanted
+
+%\extrainfo{Programmer} % optional, remove the line if not wanted
+%\photo[64pt]{dont_panic.png}% '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{ Circuit bender, kernel hacker, robot builder, urban explorer, trombone playerer.}
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}% uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+% \section{Summary of Qualification}
+% \cvline{}
+  % {
+    % \begin{itemize}
+    %   \item 4+ years of work experience in 
+    %   software frameworks on performance constrained mobile platforms.
+    %   \item Extensive knowledge of android multimedia framework, OpenMAX, camera 
+    %   framework, video codecs, and inter-processor communication. 
+    %   \item Led teams to achieve technical excellence under significant time 
+    %   pressures and exceed customer expectations. 
+    % \end{itemize}}{}{}{}{}
+
+\section{Education}
+   \cventry{2015}{Bachelor Of Science}{Humboldt-Universit\"at zu Berlin}{}{}{
+      \begin{itemize}
+         \item \textit{Major:} Computer Science
+      \end{itemize}}
+   \cventry{2009}{Abitur}{Melanchthon-Gymnasium Berlin}{}{}{
+      % \begin{itemize}
+      %    \item \textit{Major:} Science (Physics, Chemistry, Math, Biology)
+      %    \item \textit{Honours:} Ranked 16th out of more than 200,000 students. \emph{GPA 3.87/4.0.}
+      % \end{itemize}
+    }
+
+\cvline  {}{}
+
+\section{Employment History}
+   \cventry{Aug14 - Mar15}{connected-health.eu GmbH, Hamburg}{}{}{}{
+      \begin{itemize}
+         \item \textit{Role:} Senior Software Engineer
+      \end{itemize}}
+
+   \cventry{Jun13 - Nov13}{flowkey GmbH, Berlin}{}{}{}{
+      \begin{itemize}
+         \item \textit{Role:} Software Engineer
+      \end{itemize}}
+  
+   \cventry{Nov12 - Feb13}{Adaptive Systeme Group, Humboldt-Universit\"at zu Berlin}{}{}{}{
+      \begin{itemize}
+         \item \textit{Role:} Student Assistant
+      \end{itemize}}
+
+   \cventry{Okt11 - Aug13}{expectare Deutschland GmbH, Berlin}{}{}{}{
+      \begin{itemize}
+         \item \textit{Role:} Software Engineer 
+      \end{itemize}}
+    
+
+
+\cvline  {}{}
+
+\section{Technical Expertise}
+   \cvline{Languages}{ Java, Python, JavaScript, PHP, HTML5, CSS, SCSS, ActionScript, NoSQL, SQL, UML, LaTeX, Bison/Flex, XML, JSON }
+   \cvline{JavaScript Frameworks}{ Coffeescript, Meteor Js, Backbone Js, Handlebar Js, Angular Js }
+   \cvline{Technology}{ REST, WebSocket }
+   \cvline{OS}{ Linux, Mac OS X, Docker + CoreOS }
+   \cvline{Software}{ Git, Vim, Shell }
+   \cvline{Methodology}{ TDD, BDD, Agile, Continuous Integration }
+   \cvline{Interests}{ Lisp/Clojure, Haskell, Distributed Systems, Blockchain Tech, Ethereum, TLA+, Machine Learning, Game Theory, Evolutionary algorithms}
+  
+\cvline  {}{}
+
+\newpage
+\section{Work Experience} 
+
+    \cventry {Aug14 - Mar15}{developing LifeHub soft-/hardware}{}{}{}{}
+    \subsection{\small\emph{connected-health.eu GmbH}}
+    \cvlistitem  { developing middleware soft/hardware soluting for plug and play local phone/pc synchronisation }
+    \cvlistitem  { designing BLE/WiFi communication protocolls }
+    \cvlistitem  { working with the Linux-Kernel, Shell, Python }
+    
+    \cventry {Jun12 - Feb13}{flowkey frontwend web-app/ backend in MeteorJS}{}{}{}{}
+    \subsection{\small\emph{flowkey GmbH}}
+    \cvlistitem  {building flowkey web-app frontend with MeteorJS, a cliend side MVC JavaScript framework}
+    \cvlistitem  {extending and integrating VexFlow, a javascript music notation rendering engine}
+    \cvlistitem  {building MIDI - JSON - VexFlow middleware in javascript}
+    \cvlistitem  {building video procesing engine for overlay keyboard rendering}
+
+    \cventry {Feb12 - Jan14}{member of Nao Team Humbold Robocup Group}{}{}{}{}
+    \subsection{\small\emph{robotic soccer}}
+    \cvlistitem  {building algorithms and data structures in Java, robotic system maintainence (Nao), moddeling vision, moddeling behaviour}
+    
+    \cventry {Nov11 - Aug13}{TouchScope CMS web-app, mobile-app - a digital software suite}{}{}{}{}
+    \subsection{\small\emph{George P. Johnson, IBM}}
+    \cvlistitem  {building web-app/ mobile-app/ backend with ASP.Net, HTML5, JS, BackboneJS}
+    
+    \cventry {Dec12 - Aug13}{TMS - web-app}{}{}{}{}
+    \subsection{\small\emph{TMS GmbH}}
+    \cvlistitem  {building web-app with HTML5, JS, BackboneJS, PHP, WordPress}
+
+% \section{Honors}
+%   %\cventry {At QCom}{I was given ``QualStar'' award for contributions to the LGE V510 Tablet project}{}{}{}{}
+% 
+%   \subsection{\emph{At Qualcomm, I was given ``QualStar'' award for contributions to the LGE V510 Tablet project}}
+%   \cvline  {}{}
+%   %\cventry {At TI}{I have been honored with ``multiple diamond awards'' in my tenure at TI.}{}{}{}{}
+%   
+%   \subsection{\emph{Texas Instruments awards ``Diamond Awards'' to individuals or teams for showcasing exemplary performance towards achieving organizational goals.\newline \newline Specifically:}}
+%   
+%   \cvlistitem{Contribution that is above and beyond the call of duty}
+%   \cvlistitem{Contribution with customer and/or business impact}
+%   \cvlistitem{Consistent, exceptional performance for 2 or more quarters in a row}
+% 
+%   \subsection{\emph{I have been honored with ``multiple diamond awards'' in my tenure at TI.}}
+%   
+% \cvline {}{}
+
+% \begin{center}
+% \color{gray}\Large{$\nu\epsilon$ $\pi\alpha\beta o \rho$}
+% \end{center}
+  
+\end{document}
+
+
+%\section{Experience}
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newlineDescription line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+%\section{Languages}
+%\cvlanguage{Language 1}{Skill level}{Comment}
+%\cvlanguage{Language 2}{Skill level}{Comment}
+%\cvlanguage{Language 3}{Skill level}{Comment}
+
+%\section{Computer skills}
+%\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+%\cvline{hobby 1}{\small Description}
+%\cvline{hobby 2}{\small Description}
+%\cvline{hobby 3}{\small Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+
+%% end of file `template_en.tex'.
